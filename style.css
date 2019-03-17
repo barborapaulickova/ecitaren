@@ -687,6 +687,10 @@ nav #categories {
   .login-container .login-window {
     width: 90%;
   }
+
+  .registration {
+    flex: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
