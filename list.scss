@@ -1,0 +1,312 @@
+.list {
+    @include box-shadow;
+    @include basic;
+    display: flex;
+    flex-flow: row wrap;
+    flex: 5;
+    background-color: $white;
+    margin: 15px 10px;
+    border-radius: 5px;
+    color: $gray-dark;
+    height: fit-content;
+    
+    
+    .list-title {
+        display: flex;
+        flex: 1 100%;
+        justify-content: flex-end;
+        padding: $padding-basic;
+        
+        h2 {
+            font-family: $font-family-basic;
+            font-size: $font-mat-size;
+            margin: auto 0;
+            flex: 1;
+        }
+        
+        .add-filter {
+            color: $blue;
+            
+            &:before {
+                @include mat-icon-m;
+                content: 'filter_list';  
+            }
+            
+            &:after {
+                text-transform: uppercase;
+                content: 'add filter';
+            }
+        }
+        
+        .create {
+            color: $blue;
+            
+            &:before {
+                @include mat-icon-m;
+                content: 'add';  
+            }
+            
+            &:after {
+                text-transform: uppercase;
+                content: 'create';
+            }
+        }
+        
+        .refresh {
+            color: $blue;
+            
+            &:before {
+                @include mat-icon-m;
+                content: 'refresh';  
+            }
+            
+            &:after {
+                text-transform: uppercase;
+                content: 'refresh';
+            }
+        }
+    }
+    
+    table {
+        flex: 1 100%;
+        line-height: 1.5;
+        border-collapse: collapse;
+        
+        tr {
+            border-bottom: $border-bottom; 
+            
+            th {
+                text-align: left;
+            }
+
+            td {
+                color: $gray-medium;
+            }
+        }
+
+        .name {
+            
+            &:before { 
+                content: 'Name';
+            }
+            
+            &:after {
+                @include mat-icon-m;
+                content: 'arrow_upward'; 
+            }
+        }
+        
+        .products {
+            color: $blue;
+            
+            &:before {
+                @include mat-icon;
+                content: 'perm_media';  
+            }
+            
+            &:after {
+                text-transform: uppercase;
+                content: 'products';
+            }
+        }
+        
+        .edit {
+            color: $blue;
+            
+            &:before {
+                @include mat-icon;
+                content: 'edit';  
+            }
+            
+            &:after {
+                text-transform: uppercase;
+                content: 'edit';
+            }
+        }
+    }
+    
+    .table-footer {
+        flex: 1 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: $padding-basic;
+        color: $gray-medium;
+        
+        .total-rows, .total-pages {
+            margin: auto 10px;
+            padding: 0 20px;
+        }
+        
+        .total-pages {
+            letter-spacing: 20px;
+            color: $gray-dark;
+            
+            .active-page {
+                color: $blue;
+            }
+        }
+        
+        .next {
+            color: $blue; 
+            
+            &:before {
+                text-transform: uppercase;
+                content: 'next';
+            }
+            
+            &:after {
+                @include mat-icon-m;
+                content: 'keyboard_arrow_right';  
+            }
+        }
+    }
+    
+    .search {
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+        padding: $padding-basic;
+        color: $gray-medium;
+        
+        input {
+            height: fit-content;
+            border: none;
+            border-bottom: $border-bottom;
+            outline: none;
+        }
+    }
+    
+    .posters {
+        display: flex;
+        flex-flow: row wrap;
+        flex: 1 100%;
+        color: $white;
+    }
+    
+    .post-item {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        align-content: flex-end;
+        margin: 2px;
+        flex: 1 20%;
+        height: 80%;
+        padding: $padding-basic;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .post-name {
+            flex: 1 100%;
+        }
+        
+        .post-price {
+            flex: 1;
+            padding-left: $padding-basic;
+        }
+        
+        .post-edit {
+            align-self: flex-end;
+            
+            &:before {
+               @include mat-icon;
+                content: 'edit'; 
+            }
+        }
+    }
+    
+    .post-item-1 {
+        background-image: url(1.jpg);
+    }
+    
+    .post-item-2 {
+        background-image: url(2.jpg);
+    }
+    
+    .post-item-3 {
+        background-image: url(3.jpg);
+    }
+    
+    .post-item-4 {
+        background-image: url(4.jpg);
+    }
+    
+    .post-item-1 {
+        background-image: url(1.jpg);
+    }
+    
+    .post-item-5 {
+        background-image: url(5.jpg);
+    }
+    
+    .post-item-6 {
+        background-image: url(6.jpg);
+    }
+    
+    .post-item-7 {
+        background-image: url(7.jpg);
+    }
+    
+    .post-item-8 {
+        background-image: url(8.jpg);
+    }
+    
+    .post-item-9 {
+        background-image: url(9.jpg);
+    }
+    
+    .post-item-10 {
+        background-image: url(10.jpg);
+    }
+    
+    .post-item-11 {
+        background-image: url(11.jpg);
+    }
+    
+    .post-item-12 {
+        background-image: url(12.jpg);
+    }
+    
+    .books {
+        display: flex;
+        flex-flow: row wrap;
+        flex: 1 100%;
+        
+        .book-item {
+            display: flex;
+            margin: 2px;
+            flex: 1 30%;
+            padding: $padding-basic;
+            
+            .book-info {
+                background-image: linear-gradient(to bottom, #eb9dbf, #f1b3cb, #f7c9d8, #fbdfe7, #fdf5f7);
+                color: $gray-dark;
+                display: flex;
+                flex-direction: column;
+                border-radius: 5px;
+                text-align: -webkit-right;
+                padding: 0 10px 10px 0;
+                
+                .book-category {
+                    flex: 1 100%;
+                    
+                    border-radius: 5px;
+                    
+                    padding: $padding-basic;
+
+                    &:before {
+                        @include mat-icon;
+                        content: 'person';
+                    }
+                }
+
+                .book-author {
+                    flex: 1 30%;
+                    
+                    &:before {
+                        content: 'autor:';
+                    }
+                }
+            }
+        }
+    }
+}
