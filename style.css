@@ -1,0 +1,685 @@
+@charset "UTF-8";
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #FAFAFA;
+  max-width: 1200px;
+  margin: auto;
+  min-height: -webkit-fill-available;
+  align-content: baseline;
+}
+
+.global {
+  background-color: #283593;
+  color: #fff;
+  display: flex;
+  padding: 0 10px 0 0;
+  flex: 1 100%;
+  text-align: left;
+}
+.global #menu {
+  background-color: #283593;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+}
+.global #menu i {
+  font-size: 20px;
+}
+.global #menu:hover {
+  background-color: #232E7F;
+}
+.global #menu:active {
+  transform: rotate(35deg);
+  background-color: #2D3CA7;
+}
+.global h1 {
+  font-family: sans-serif;
+  font-size: 16px;
+  margin: auto 0;
+  padding: 0 20px;
+  cursor: default;
+  flex: 1;
+}
+.global .global-icon {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: end;
+  margin: auto;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+.global .global-icon:before {
+  font-family: "Material Icons";
+  padding: 10px;
+  font-size: 20px;
+  vertical-align: bottom;
+  text-transform: lowercase;
+  vertical-align: bottom;
+}
+.global .global-icon:after {
+  text-transform: uppercase;
+}
+.global .login:before {
+  content: "update";
+}
+.global .login:after {
+  content: "login";
+}
+.global .profile {
+  display: none;
+}
+.global .profile:before {
+  content: "account_circle";
+}
+.global .profile:after {
+  content: "profil";
+}
+
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 25px 0;
+  align-content: baseline;
+}
+nav a, nav div {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  flex: 1 100%;
+  color: #928A83;
+  height: 50px;
+}
+nav a:before, nav div:before {
+  font-family: "Material Icons";
+  padding: 10px;
+  font-size: 20px;
+  vertical-align: bottom;
+}
+nav a:hover, nav div:hover {
+  color: #222222;
+}
+nav .active {
+  color: #222222;
+}
+nav #categories {
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+#menu-xl {
+  flex: 1;
+}
+#menu-xl #categories:after {
+  content: "Kategórie";
+}
+#menu-xl #roman:before {
+  content: "person";
+}
+#menu-xl #roman:after {
+  content: "Román";
+}
+#menu-xl #poviedka:before {
+  content: "label";
+}
+#menu-xl #poviedka:after {
+  content: "Poviedka";
+}
+#menu-xl #rozpravka:before {
+  content: "attach_money";
+}
+#menu-xl #rozpravka:after {
+  content: "Rozprávka";
+}
+#menu-xl #fantasy:before {
+  content: "perm_media";
+}
+#menu-xl #fantasy:after {
+  content: "Fantasy";
+}
+#menu-xl #cestopis:before {
+  content: "turned_in";
+}
+#menu-xl #cestopis:after {
+  content: "Cestopis";
+}
+#menu-xl #horor:before {
+  content: "chat";
+}
+#menu-xl #horor:after {
+  content: "Horor";
+}
+#menu-xl #lgbt:before {
+  content: "settings";
+}
+#menu-xl #lgbt:after {
+  content: "LGBT";
+}
+
+#menu-xs {
+  display: none;
+}
+#menu-xs #categories-xs:before {
+  content: "";
+}
+#menu-xs #roman-xs:before {
+  content: "person";
+}
+#menu-xs #poviedka-xs:before {
+  content: "label";
+}
+#menu-xs #rozpravka-xs:before {
+  content: "attach_money";
+}
+#menu-xs #fantasy-xs:before {
+  content: "perm_media";
+}
+#menu-xs #cestopis-xs:before {
+  content: "turned_in";
+}
+#menu-xs #horor-xs:before {
+  content: "chat";
+}
+#menu-xs #lgbt-xs:before {
+  content: "settings";
+}
+
+.list {
+  -webkit-box-shadow: -1px 1px 49px -8px #b5b1b5;
+  -moz-box-shadow: -1px 1px 49px -8px #b5b1b5;
+  box-shadow: -1px 1px 49px -8px #b5b1b5;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  flex-flow: row wrap;
+  flex: 5;
+  background-color: #fff;
+  margin: 15px 10px;
+  border-radius: 5px;
+  color: #222222;
+  height: fit-content;
+}
+.list .list-title {
+  display: flex;
+  flex: 1 100%;
+  justify-content: flex-end;
+  padding: 10px;
+}
+.list .list-title h2 {
+  font-family: sans-serif;
+  font-size: 20px;
+  margin: auto 0;
+  flex: 1;
+}
+.list .list-title .add-filter {
+  color: #283593;
+}
+.list .list-title .add-filter:before {
+  font-family: "Material Icons";
+  font-size: 16px;
+  vertical-align: bottom;
+  margin: auto 10px;
+  content: "filter_list";
+}
+.list .list-title .add-filter:after {
+  text-transform: uppercase;
+  content: "add filter";
+}
+.list .list-title .create {
+  color: #283593;
+}
+.list .list-title .create:before {
+  font-family: "Material Icons";
+  font-size: 16px;
+  vertical-align: bottom;
+  margin: auto 10px;
+  content: "add";
+}
+.list .list-title .create:after {
+  text-transform: uppercase;
+  content: "create";
+}
+.list .list-title .refresh {
+  color: #283593;
+}
+.list .list-title .refresh:before {
+  font-family: "Material Icons";
+  font-size: 16px;
+  vertical-align: bottom;
+  margin: auto 10px;
+  content: "refresh";
+}
+.list .list-title .refresh:after {
+  text-transform: uppercase;
+  content: "refresh";
+}
+.list table {
+  flex: 1 100%;
+  line-height: 1.5;
+  border-collapse: collapse;
+}
+.list table tr {
+  border-bottom: 1px solid #E0E0E0;
+}
+.list table tr th {
+  text-align: left;
+}
+.list table tr td {
+  color: #757575;
+}
+.list table .name:before {
+  content: "Name";
+}
+.list table .name:after {
+  font-family: "Material Icons";
+  font-size: 16px;
+  vertical-align: bottom;
+  margin: auto 10px;
+  content: "arrow_upward";
+}
+.list table .products {
+  color: #283593;
+}
+.list table .products:before {
+  font-family: "Material Icons";
+  padding: 10px;
+  font-size: 20px;
+  vertical-align: bottom;
+  content: "perm_media";
+}
+.list table .products:after {
+  text-transform: uppercase;
+  content: "products";
+}
+.list table .edit {
+  color: #283593;
+}
+.list table .edit:before {
+  font-family: "Material Icons";
+  padding: 10px;
+  font-size: 20px;
+  vertical-align: bottom;
+  content: "edit";
+}
+.list table .edit:after {
+  text-transform: uppercase;
+  content: "edit";
+}
+.list .table-footer {
+  flex: 1 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  color: #757575;
+}
+.list .table-footer .total-rows, .list .table-footer .total-pages {
+  margin: auto 10px;
+  padding: 0 20px;
+}
+.list .table-footer .total-pages {
+  letter-spacing: 20px;
+  color: #222222;
+}
+.list .table-footer .total-pages .active-page {
+  color: #283593;
+}
+.list .table-footer .next {
+  color: #283593;
+}
+.list .table-footer .next:before {
+  text-transform: uppercase;
+  content: "next";
+}
+.list .table-footer .next:after {
+  font-family: "Material Icons";
+  font-size: 16px;
+  vertical-align: bottom;
+  margin: auto 10px;
+  content: "keyboard_arrow_right";
+}
+.list .search {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  padding: 10px;
+  color: #757575;
+}
+.list .search input {
+  height: fit-content;
+  border: none;
+  border-bottom: 1px solid #E0E0E0;
+  outline: none;
+}
+.list .posters {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 100%;
+  color: #fff;
+}
+.list .post-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  align-content: flex-end;
+  margin: 2px;
+  flex: 1 20%;
+  height: 80%;
+  padding: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.list .post-item .post-name {
+  flex: 1 100%;
+}
+.list .post-item .post-price {
+  flex: 1;
+  padding-left: 10px;
+}
+.list .post-item .post-edit {
+  align-self: flex-end;
+}
+.list .post-item .post-edit:before {
+  font-family: "Material Icons";
+  padding: 10px;
+  font-size: 20px;
+  vertical-align: bottom;
+  content: "edit";
+}
+.list .post-item-1 {
+  background-image: url(1.jpg);
+}
+.list .post-item-2 {
+  background-image: url(2.jpg);
+}
+.list .post-item-3 {
+  background-image: url(3.jpg);
+}
+.list .post-item-4 {
+  background-image: url(4.jpg);
+}
+.list .post-item-1 {
+  background-image: url(1.jpg);
+}
+.list .post-item-5 {
+  background-image: url(5.jpg);
+}
+.list .post-item-6 {
+  background-image: url(6.jpg);
+}
+.list .post-item-7 {
+  background-image: url(7.jpg);
+}
+.list .post-item-8 {
+  background-image: url(8.jpg);
+}
+.list .post-item-9 {
+  background-image: url(9.jpg);
+}
+.list .post-item-10 {
+  background-image: url(10.jpg);
+}
+.list .post-item-11 {
+  background-image: url(11.jpg);
+}
+.list .post-item-12 {
+  background-image: url(12.jpg);
+}
+.list .books {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 100%;
+}
+.list .books .book-item {
+  display: flex;
+  margin: 2px;
+  flex: 1 30%;
+  padding: 10px;
+}
+.list .books .book-item .book-info {
+  background-image: linear-gradient(to bottom, #eb9dbf, #f1b3cb, #f7c9d8, #fbdfe7, #fdf5f7);
+  color: #222222;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  text-align: -webkit-right;
+  padding: 0 10px 10px 0;
+}
+.list .books .book-item .book-info .book-category {
+  flex: 1 100%;
+  border-radius: 5px;
+  padding: 10px;
+}
+.list .books .book-item .book-info .book-category:before {
+  font-family: "Material Icons";
+  padding: 10px;
+  font-size: 20px;
+  vertical-align: bottom;
+  content: "person";
+}
+.list .books .book-item .book-info .book-author {
+  flex: 1 30%;
+}
+.list .books .book-item .book-info .book-author:before {
+  content: "autor:";
+}
+
+.login-container {
+  background-image: url(login.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  min-height: -webkit-fill-available;
+}
+.login-container .login-window {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 10px;
+  background-color: #fff;
+  margin: 10% 0;
+  width: 330px;
+  border-radius: 5px;
+}
+.login-container .login-window .lock {
+  background-color: #F50057;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  align-self: center;
+}
+.login-container .login-window .lock:before {
+  font-family: "Material Icons";
+  padding: 10px;
+  font-size: 20px;
+  vertical-align: bottom;
+  padding: 8px;
+  font-size: 25px;
+  line-height: 1.5;
+  content: "lock_outline";
+  color: #fff;
+}
+.login-container .login-window p {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #757575;
+  align-self: center;
+  flex: 1;
+}
+.login-container .login-window label {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #757575;
+  margin: 20px 0 0 0;
+}
+.login-container .login-window input {
+  border: none;
+  border-bottom: 1px solid #E0E0E0;
+  padding: 10px 0;
+  outline: none;
+}
+.login-container .login-window input:required:focus {
+  border-bottom: 1px solid #ff0000;
+  margin-bottom: 5px;
+}
+.login-container .login-window input:focus::-webkit-input-placeholder {
+  color: #ff0000;
+}
+.login-container .login-window input:focus + span:before {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  content: "Required";
+  color: #ff0000;
+  font-size: 10px;
+}
+.login-container .login-window button {
+  background-color: #283593;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  outline: none;
+}
+
+.registration #registration-xl {
+  flex: 1;
+  display: none;
+  flex-direction: column;
+}
+.registration #registration-xl h2 {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #283593;
+  text-align: -webkit-right;
+  cursor: pointer;
+}
+.registration #registration-xl h2:after {
+  font-family: "Material Icons";
+  padding: 10px;
+  font-size: 20px;
+  vertical-align: bottom;
+  content: "compare_arrows";
+  cursor: pointer;
+  padding-left: 20px;
+}
+.registration #registration-xl input {
+  border: 1px solid #E0E0E0;
+  padding: 10px;
+  outline: none;
+  margin: 10px;
+  border-radius: 5px;
+}
+.registration #registration-xl input:focus::-webkit-input-placeholder {
+  font-weight: 600;
+}
+.registration #registration-xl button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #283593;
+  color: #fff;
+  outline: none;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 10px;
+}
+.registration #registration-xs {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  writing-mode: vertical-rl;
+}
+.registration #registration-xs .registration-icon:before {
+  font-family: "Material Icons";
+  padding: 10px;
+  font-size: 20px;
+  vertical-align: bottom;
+  content: "compare_arrows";
+  cursor: pointer;
+  color: #283593;
+  padding: 0 10px 20px 10px;
+}
+.registration #registration-xs .registration-icon:after {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  content: "Vytvoriť účet";
+  cursor: pointer;
+  color: #283593;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media (max-width: 500px) {
+  nav a {
+    font-size: 10px;
+  }
+  nav a:before {
+    font-size: 16px;
+  }
+
+  .global h1 {
+    font-size: 12px;
+  }
+  .global .logout:before {
+    font-size: 16px;
+  }
+
+  .list {
+    font-size: 10px;
+  }
+  .list .list-title {
+    flex-wrap: wrap;
+  }
+  .list .list-title h2 {
+    font-size: 12px;
+  }
+  .list table .products:before, .list table .edit:before {
+    font-size: 16px;
+  }
+  .list .table-footer .total-pages {
+    letter-spacing: 5px;
+  }
+  .list .table-footer .total-rows {
+    padding: 0;
+  }
+  .list .table-footer .next:after {
+    font-size: 10px;
+  }
+  .list .post-item {
+    height: 30%;
+    flex: 1 25%;
+  }
+
+  #menu-xl {
+    display: none;
+  }
+
+  #menu-xs {
+    display: flex;
+    flex: 0;
+  }
+
+  .login-container .login-window {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

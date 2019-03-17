@@ -1,0 +1,165 @@
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 25px 0;
+    align-content: baseline;
+    
+    a, div {
+        @include basic;
+        text-decoration: none;
+        flex: 1 100%;
+        color: $gray-light;
+        height: 50px;
+        
+        &:before {
+            @include mat-icon;
+        }
+        
+        &:hover {
+           color: $gray-dark;  
+        }
+    }
+    
+    .active {
+        color: $gray-dark;
+    }
+    
+    #categories {
+        font-size: $font-mat-size;
+        padding-left: $padding-basic;
+    }
+}
+#menu-xl {
+    flex: 1;
+    
+    #categories {
+        &:after {
+            content: 'Kategórie';
+        }
+    }
+
+    #roman {
+        &:before {
+            content: 'person';
+        }
+
+        &:after {
+            content: 'Román';
+        }
+    }
+
+   #poviedka {
+        &:before {
+            content: 'label';
+        }
+
+       &:after {
+             content: 'Poviedka';
+         }
+     }
+
+    #rozpravka {
+         &:before {
+             content: 'attach_money';
+         }
+
+         &:after {
+             content: 'Rozprávka';
+         }
+     }
+
+     #fantasy {
+         &:before {
+             content: 'perm_media';
+         }
+
+         &:after {
+             content: 'Fantasy';
+         }
+     }
+
+     #cestopis {
+         &:before {
+             content: 'turned_in';
+         }
+
+         &:after {
+             content: 'Cestopis';
+         }
+     }
+
+     #horor {
+         &:before {
+             content: 'chat';
+         }
+
+         &:after {
+            content: 'Horor';
+        }
+    }
+
+    #lgbt {
+        &:before {
+            content: 'settings';
+        }
+
+        &:after {
+            content: 'LGBT';
+        }
+    }
+}
+        
+#menu-xs {
+    display: none;
+    
+    #categories-xs {
+        &:before {
+            content: '';
+        }
+    }
+
+    #roman-xs {
+        &:before {
+            content: 'person';
+        }
+    }
+
+   #poviedka-xs {
+        &:before {
+            content: 'label';
+        }
+    }
+
+   #rozpravka-xs {
+        &:before {
+            content: 'attach_money';
+        }
+    }
+
+    #fantasy-xs {
+        &:before {
+            content: 'perm_media';
+        }
+    }
+
+    #cestopis-xs {
+        &:before {
+            content: 'turned_in';
+        }
+    }
+
+    #horor-xs {
+        &:before {
+            content: 'chat';
+        }
+    }
+
+    #lgbt-xs {
+        &:before {
+            content: 'settings';
+        }
+    }
+}
+
+    
+  

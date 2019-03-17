@@ -1,0 +1,80 @@
+.global {
+    background-color: $blue;
+    color: $white;
+    display: flex;
+    padding: 0 $padding-basic 0 0;
+    flex: 1 100%;
+    text-align: left;
+    
+    #menu {
+        background-color: $blue;
+        color: $white;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        border-radius: 50%;
+        padding: $padding-basic;
+        
+        i {
+            font-size: $font-mat-size;
+        }
+        
+        &:hover {
+            background-color: $blue-dark;
+        }
+        
+        &:active {
+            transform: rotate(35deg);
+            background-color: $blue-light;
+        }
+    }
+    
+    h1 {
+        font-family: $font-family-basic;
+        font-size: $font-h1-size;
+        margin: auto 0;
+        padding: 0 20px;
+        cursor: default;
+        flex: 1;
+    }
+    
+        .global-icon {
+        @include basic;
+        text-align: end;
+        margin: auto;
+        cursor: pointer;
+        text-decoration: none;
+        color: $white;
+        
+        &:before {
+            @include mat-icon;
+            text-transform: lowercase;
+            vertical-align: bottom;
+        }    
+        
+        &:after {
+            text-transform: uppercase;
+        }
+        }
+    
+        .login {
+        &:before {
+            content: 'update';
+        }    
+        
+        &:after {
+            content: 'login';
+        }
+        }
+            
+        .profile {
+            display: none;
+        &:before {
+            content: 'account_circle';
+        }    
+        
+        &:after {
+            content: 'profil';
+        }
+        }
+}

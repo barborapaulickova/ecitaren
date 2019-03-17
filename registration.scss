@@ -1,0 +1,73 @@
+.registration {
+    #registration-xl {
+        flex: 1;
+        display: none;
+        flex-direction: column;
+    
+        h2 {
+            @include basic;
+            font-size: $font-mat-size;
+            color: $blue;
+            text-align: -webkit-right;
+            cursor: pointer;
+        
+        &:after {
+            @include mat-icon;
+            content: 'compare_arrows';
+            cursor: pointer;
+            padding-left: 20px;
+        }
+        }
+    
+        input {
+            border: $border-bottom;  
+            padding: $padding-basic;
+            outline: none;
+            margin: 10px;
+            border-radius: 5px;
+
+            &:focus::-webkit-input-placeholder {
+                font-weight: 600;
+            }
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: $blue;
+            color: $white;
+            outline: none;
+            font-weight: 600;
+            cursor: pointer;
+            margin: 10px;
+        }
+    }
+    
+    #registration-xs {
+        @include basic;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+        writing-mode: vertical-rl;
+        
+        .registration-icon {
+            &:before {
+            @include mat-icon;
+            content: 'compare_arrows';
+            cursor: pointer;
+            color: $blue;
+            padding: 0 10px 20px 10px;     
+        }
+            &:after {
+            @include basic;
+            content: 'Vytvoriť účet';
+            cursor: pointer;
+            color: $blue;
+            font-size: $font-mat-size;
+            font-weight: 600;
+        }
+    }
+}
+}
