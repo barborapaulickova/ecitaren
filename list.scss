@@ -275,23 +275,18 @@
             display: flex;
             margin: 2px;
             flex: 1 30%;
-            padding: $padding-basic;
             
             .book-info {
                 background-image: linear-gradient(to bottom, #eb9dbf, #f1b3cb, #f7c9d8, #fbdfe7, #fdf5f7);
                 color: $gray-dark;
                 display: flex;
                 flex-direction: column;
-                border-radius: 5px;
                 text-align: -webkit-right;
                 padding: 0 10px 10px 0;
                 
                 .book-category {
-                    flex: 1 100%;
-                    
                     border-radius: 5px;
-                    
-                    padding: $padding-basic;
+                    padding: 0 0 10px 10px;
 
                     &:before {
                         @include mat-icon;
@@ -300,11 +295,27 @@
                 }
 
                 .book-author {
-                    flex: 1 30%;
+                    font-size: $font-xs-size;
+                    color: $gray-medium;
                     
                     &:before {
                         content: 'autor:';
                     }
+                }
+                
+                .creation-date {
+                    font-size: $font-xs-size;
+                    color: $gray-medium;
+                }
+            }
+            .book-title {
+                display: flex;
+                flex-direction: column;
+                text-align: justify;
+                padding: 0 $padding-basic;
+                
+                .book-name {
+                    
                 }
             }
         }

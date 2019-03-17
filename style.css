@@ -440,21 +440,18 @@ nav #categories {
   display: flex;
   margin: 2px;
   flex: 1 30%;
-  padding: 10px;
 }
 .list .books .book-item .book-info {
   background-image: linear-gradient(to bottom, #eb9dbf, #f1b3cb, #f7c9d8, #fbdfe7, #fdf5f7);
   color: #222222;
   display: flex;
   flex-direction: column;
-  border-radius: 5px;
   text-align: -webkit-right;
   padding: 0 10px 10px 0;
 }
 .list .books .book-item .book-info .book-category {
-  flex: 1 100%;
   border-radius: 5px;
-  padding: 10px;
+  padding: 0 0 10px 10px;
 }
 .list .books .book-item .book-info .book-category:before {
   font-family: "Material Icons";
@@ -464,12 +461,22 @@ nav #categories {
   content: "person";
 }
 .list .books .book-item .book-info .book-author {
-  flex: 1 30%;
+  font-size: 10px;
+  color: #757575;
 }
 .list .books .book-item .book-info .book-author:before {
   content: "autor:";
 }
-
+.list .books .book-item .book-info .creation-date {
+  font-size: 10px;
+  color: #757575;
+}
+.list .books .book-item .book-title {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 0 10px;
+}
 .login-container {
   background-image: url(login.jpg);
   background-size: cover;
